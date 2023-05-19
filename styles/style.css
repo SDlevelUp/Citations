@@ -2,9 +2,9 @@
 
 body {
     background: #06BDC1;
-    background: -webkit-radial-gradient(center, #06BDC1, #68469F);
-    background: -moz-radial-gradient(center, #06BDC1, #68469F);
-    background: radial-gradient(ellipse at center, #06BDC1, #68469F);
+    background: -webkit-radial-gradient(center, #06BDC1, #985dc0);
+    background: -moz-radial-gradient(center, #06BDC1, #985dc0);
+    background: radial-gradient(ellipse at center, #06BDC1, #985dc0);
 }
 
 .app {
@@ -29,12 +29,14 @@ body {
     text-align: center;
     min-height: 400px;
     padding: 0 25px;
-    color: gray;
-    border-radius: 10px;
-    background-color: #F4EDEA;
-    border: 10px solid #06BDC1;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
     font-family: 'Dancing Script', sans-serif;
+
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 400px;
 }
 
 .text-quotes-container p {
@@ -53,19 +55,20 @@ body {
 }
 
 #btn-generator {
-    border-radius: 10px;
-    background-color: #F4EDEA;
-    border: solid 5px #06BDC1;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: 'Dancing Script', sans-serif;
     font-size: 22px;
-
 }
 
 
 #btn-generator:hover {
-    background-color: white;
     cursor: pointer;
+    transform: scale(1.02);
+    background-color: #FFF;
 }
 
 @media(max-width:1280px) {
